@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
   <body>
     yo yo yo<br>
-    <input type='button' onclick='' value='Button'><br>
+    <input type='button' onclick='$.ajax({type: 'POST', url: 'savedata.php', data: 'win!',dataType: 'text'});' value='Button'><br>
     oy
     
   </body>
