@@ -11,6 +11,7 @@
 </select></h4>
 <h4>Current skill level:&nbsp;<input id="level" onkeydown="refresh()"></input></h4>
 <h4>Seconds for 1%:&nbsp;<input id="time" onkeydown="refresh()"></input></h4>
+<h6>Questions? Problems? Contact garzahd on IEH Discord</h6>
 <div id="output"></div>
 <script>
 var sumExp = function (p, m, n) {
@@ -53,7 +54,7 @@ var calcLandmarks = function (L) {
 var recalc = function () {
   var S = parseInt(document.getElementById("skill").value,10);
   var L = parseInt(document.getElementById("level").value,10);
-  var T = parseInt(document.getElementById("time").value,10);
+  var T = parseFloat(document.getElementById("time").value,10);
   if (isNaN(L) || !L) return;
   if (isNaN(T) || !T) return;
   var P = (S+7)/2;
